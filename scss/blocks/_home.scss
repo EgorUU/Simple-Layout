@@ -1,0 +1,46 @@
+.home {
+    display: flex;
+    justify-content: center;
+    max-height: 620px;
+    &-container {
+        display: flex;
+        margin: auto 0;
+        &__content {
+            margin-right: 125px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h1 {
+                @include font(400, 60px);
+                font-family: "Roboto", sans-serif;
+                color: $gray;
+            }
+            p {
+                @include font(400, 18px);
+                font-family: "Roboto", sans-serif;
+                color: $gray;
+            }
+            button {
+                width: 255px;
+                height: 70px;
+                background: white;
+                border: 1px solid #7875FE;
+                @include font(400, 20px);
+                font-family: "Roboto", sans-serif;
+                color: #7875FE;
+                &:hover {
+                    background: #7875FE;
+                    color: white;
+                }
+                &:focus {
+                    background: #DAD9FB;
+                    color: white;
+                    border: 1px solid #7875FE;
+                }
+            }
+        }
+    }
+    &-image {
+        padding-top: 60px;
+    }
+}

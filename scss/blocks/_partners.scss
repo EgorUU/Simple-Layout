@@ -1,0 +1,20 @@
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB;
+    .partners-container {
+        display: flex;
+        gap: 30px;
+        padding: 90px 0px;
+    }
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 255px;
+        height: 135px;
+        border: 1px solid #C4C4C4;
+    }
+}
+

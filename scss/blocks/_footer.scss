@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    background: #4C5866;
+    justify-content: center;
+    align-items: center;
+    &-logo {
+        
+    }
+    &-contacks {
+        display: flex;
+        gap: 30px;
+
+    }
+    &-container {
+        width: 787px + 140px + 186px;
+        padding: 29px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
+.last-footer {
+    h1, span{
+        text-transform: uppercase;
+        padding: 3px 0px;
+        text-align: center;
+        @include font(400, 13px);
+        font-family: "Roboto", sans-serif;
+        color: #4C5866;
+        span {
+            color: #B5B5BD;
+        }
+    }    
+
+}

@@ -1,0 +1,64 @@
+.products {
+    &-container {
+        display: flex;
+        gap: 30px;
+        padding: 90px 0px;
+        justify-content: center;
+    }
+    &-item {
+        width: 255px;
+        height: 465px;
+        h1 {
+            @include font(400, 30px);
+            font-family: "Roboto", sans-serif;
+            color: $gray;
+            padding-top: 20px;
+        }
+        h6 {
+            @include font(400, 14px);
+            font-family: "Roboto", sans-serif;
+            color: #B5B5BD;
+            padding-top: 8px;
+
+        }
+        p {
+            @include font(400, 18px);
+            font-family: "Roboto", sans-serif;
+            color: #85859B;
+            padding-top: 8px;
+            padding-bottom: 20px;
+        }
+        a {
+            @include font(400, 20px);
+            font-family: "Roboto", sans-serif;
+            color: #7875FE;
+            display: inline-block;
+            
+            &::after {
+                content: "";
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url("../images/products/Arrow 1.svg");
+                width: 25px;
+                margin-left: 5px;
+                transform: translateY(25%);
+                height: 20px;
+            }
+            &:focus {
+                background: #DAD9FB;
+            }
+            &:active {
+                color: #4946B4;
+                &::after {
+                    background-image: url("../images/products/Arrow long.svg");
+                }
+            }
+            &:hover {
+                color: #4946B4;
+                &::after {
+                    background-image: url("../images/products/Arrow 1 blue.svg");
+                }
+            }
+        }
+    }
+}
